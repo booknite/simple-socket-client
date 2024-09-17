@@ -34,7 +34,7 @@ Inspecting the body:
 
 ```html
 <!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="ko"><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title><script nonce="gRSsJykcC2TGMdxWgC1rew">(function(){var _g={kEI:'cWbpZpOEN9DZ1e8PzZLbmQU',kEXPI:'0,18168,3682138,643,432,3,48,447833,90780,2872,2891,73050,6397,9708,203622,6700,41942,57740,2,2,1,26632,8155,23351,7450,14985,977
-'''
+```
 
 This small snippet shows:
 * The document type (<!doctype html>)
@@ -46,6 +46,6 @@ This small snippet shows:
 
 Writing the script I ran into a few problems.
 
-1.`ssl.wrap_socket()`was deprecated after Python 3.7, so I switched to using SSLContext to handle secure HTTPS connections.
+1.`ssl.wrap_socket()`was deprecated after Python 3.7, so I switched to using SSLContext to handle HTTPS connections.
 
 2. Printing the entire HTTP body for large websites could flood the terminal, so I added a feature to limit the number of characters displayed.
